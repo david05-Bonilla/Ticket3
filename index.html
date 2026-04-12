@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce system</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form>
+        <h1>Discount</h1>
+        <label for="Purchase">Enter the total of the purchase </label>
+        <input id="totalPurchase" type="number" placeholder="$">
+
+        <label for="withdrawal">Do you have a coupon</label>
+        <select name="coupon" id="hasCoupon">
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+        </select>
+
+        <button type="button" onclick="Discount()">Calculate</button>
+        <p id = "Total"></p>
+        <p id="Discount"></p>
+    </form>
+
+    <script src="js/logic.js"></script>
+</body>
+</html>
+ 
