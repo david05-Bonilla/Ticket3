@@ -8,7 +8,7 @@ function Discount() {
 
     
     if (Purchase <= 0) {
-        discountP.textContent = "Please enter a valid purchase amount";
+        discountP.textContent = "Please enter a valid Charge";
         totalP.textContent = "";
         return;
     }
