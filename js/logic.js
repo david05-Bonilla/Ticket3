@@ -1,5 +1,5 @@
 function Discount() {
-    let Purchase = Number(document.getElementById("totalPurchase").value);
+    let Charge = Number(document.getElementById("totalPurchase").value);
     let hasCoupon = document.getElementById("hasCoupon").value === "true";
     
     let discountP = document.getElementById("Discount");
@@ -7,14 +7,14 @@ function Discount() {
 
 
     
-    if (Purchase <= 0) {
+    if (Charge <= 0) {
         discountP.textContent = "Please enter a valid Charge";
         totalP.textContent = "";
         return;
     }
 
     let discountRate = 0;
-    if (Purchase > 100) {
+    if (Charge > 100) {
         discountRate =  0.20;
         if(hasCoupon){
             
@@ -24,7 +24,7 @@ function Discount() {
             discountP.textContent = "20% discount applied (no coupon)";
 
         }
-    }else if (Purchase > 50){
+    }else if (Charge > 50){
         discountRate =  0.10;
         if(hasCoupon){
             
