@@ -32,7 +32,7 @@ function Discount() {
             discountP.textContent = "10% discount - 5% coupon applied ";
         } else {
             discountP.textContent = "10% discount applied (no coupon)";
-
+       
         }
     }
     else{
